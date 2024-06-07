@@ -1,11 +1,11 @@
 [build]
-composer install && php artisan key:generate && php artisan migrate --force && npm install && npm run prod
+  command = "composer install && php artisan key:generate && php artisan migrate --force && npm install && npm run prod"
   publish = "public"
   environment = { PHP_VERSION = "8.2" }
 
 [[plugins]]
   package = "@netlify/plugin-inline-functions"
 
-[[plugina.functions]]
+[[plugins.functions]]
   name = "install_mysql_driver"
   inline = "sudo apt-get install -y php-mysql"
