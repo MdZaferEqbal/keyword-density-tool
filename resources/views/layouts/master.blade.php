@@ -31,7 +31,7 @@
                 </ul>
             </div>
             <span class="navbar-brand">
-                <a class="text-decoration-none" href="https://github.com/MdZaferEqbal" target="_blank"><i class="fa-brands fa-github text-info"></i> <i class="fa-brands fa-git text-info"></i></a>
+                <a class="text-decoration-none" href="https://github.com/MdZaferEqbal/keyword-density-tool" target="_blank"><i class="fa-brands fa-github text-info"></i> <i class="fa-brands fa-git text-info"></i></a>
             </span>
         </nav>
         <main role="main" class="container mt-3">
