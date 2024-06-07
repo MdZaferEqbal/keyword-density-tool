@@ -1,5 +1,5 @@
 [build]
-  command = "composer install && php artisan key:generate && php artisan migrate --force && npm install && npm run prod"
+  command = "composer install && php artisan key:generate && php artisan migrate --force && npm ci && npm run prod"
   publish = "public"
   environment = { PHP_VERSION = "8.2" }
 
