@@ -4,7 +4,7 @@
   environment = { PHP_VERSION = "8.2" }
 
 [[plugins]]
-  package = "@netlify/plugin-inline-functions"
-  [[plugins.functions]]
-    name = "install_mysql_driver"
-    inline = "sudo apt-get install -y php-mysql"
+  package = "netlify-plugin-one"
+
+    [plugins.inputs]
+    port = 80
