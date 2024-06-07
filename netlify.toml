@@ -5,7 +5,6 @@
 
 [[plugins]]
   package = "@netlify/plugin-inline-functions"
-
-[[plugins.functions]]
-  name = "install_mysql_driver"
-  inline = "sudo apt-get install -y php-mysql"
+  [[plugins.functions]]
+    name = "install_mysql_driver"
+    inline = "sudo apt-get install -y php-mysql"
