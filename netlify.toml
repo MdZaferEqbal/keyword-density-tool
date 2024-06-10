@@ -1,5 +1,5 @@
 build:
-  command: composer install && php artisan key:generate && php artisan migrate --force && npm ci && npm run
+  command: "composer install && php artisan key:generate && php artisan migrate --force && npm ci && npm run"
   commandOrigin: config
   environment:
     - PHP_VERSION
