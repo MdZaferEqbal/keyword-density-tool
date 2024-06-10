@@ -1,7 +1,7 @@
 [build]
   command = "composer install && php artisan key:generate && php artisan migrate --force && npm ci && npm run build"
   commandOrigin = "config"
-  environment = { PHP_VERSION = "7.4" }  # Assuming a version is needed here, replace "7.4" with the appropriate version.
+  environment = { PHP_VERSION = "8.2" }  # Assuming a version is needed here, replace "7.4" with the appropriate version.
   publish = "/opt/build/repo/public"
   publishOrigin = "config"
 
