@@ -1,11 +1,11 @@
-[build]
-  command = "composer install && php artisan key:generate && php artisan migrate --force && npm ci && npm run"
-  publish = "public"
-  environment = { PHP_VERSION = "8.2" }
-
-# Configuration for a plugin published to npm
-[[plugins]]
-package = "netlify-plugin-lighthouse"
-
-  [plugins.inputs]
-  output_path = "reports/lighthouse.html"
+build:
+  command: composer install && php artisan key:generate && php artisan migrate --force && npm ci && npm run
+  commandOrigin: config
+  environment:
+    - PHP_VERSION
+  publish: /opt/build/repo/public
+  publishOrigin: config
+plugins:
+  - inputs: {}
+    origin: config
+    package: netlify-plugin-lighthouse
