@@ -1,10 +1,15 @@
 [build]
-  command = "composer install && php artisan key:generate && php artisan migrate --force && npm ci && npm run prod && npm install -D netlify-plugin-one"
+  command = "composer install && php artisan key:generate && php artisan migrate --force && npm ci && npm run prod"
   publish = "public"
   environment = { PHP_VERSION = "8.2" }
 
+# Configuration for a plugin published to npm
 [[plugins]]
-  package = "netlify-plugin-one"
+package = "netlify-plugin-lighthouse"
 
-    [plugins.inputs]
-    port = 80
+  [plugins.inputs]
+  output_path = "reports/lighthouse.html"
+
+# Configuration for a local plugin
+[[plugins]]
+package = "/plugins/netlify-plugin-hello-world"
